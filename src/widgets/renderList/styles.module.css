@@ -1,0 +1,42 @@
+.row {
+  height: 2vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.3vh;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.row:nth-child(even) {
+  background-color: #bfbfbf;
+}
+
+.row:nth-child(odd) {
+  background-color: #dedede;
+}
+.read__more {
+  width: 6vw;
+  height: 60%;
+  background-color: rgb(109, 131, 237);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  margin-right: 1vh;
+  text-decoration: none;
+}
+.read__more:hover {
+  height: 70%;
+  background-color: rgb(0, 17, 255);
+}
+@media (max-width: 768px) {
+  .read__more {
+    font-size: 0;
+    width: 15vw;
+  }
+}
