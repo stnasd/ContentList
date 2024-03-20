@@ -11,7 +11,7 @@ const RenderList = () => {
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(9);
   const [totalItems, setTotalItems] = useState(0);
-  const [offset, setOffset] = useState(3545);
+  const [offset, setOffset] = useState(2845);
   const [pageList, setPageList] = useState<ICombinedInterface[]>([]);
 
   const { data } = useGetAllPostsQuery();
@@ -56,7 +56,7 @@ const RenderList = () => {
     const { scrollDirection, scrollOffset } = e;
     if (scrollDirection === "forward") {
       if (scrollOffset > 0 && scrollOffset >= offset) {
-        setOffset((prevstate) => prevstate + 2500);
+        setOffset((prevstate) => prevstate + 3845);
         loadMoreItems();
       }
     }
