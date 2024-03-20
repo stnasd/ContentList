@@ -40,3 +40,8 @@
     width: 15vw;
   }
 }
+@media (max-width: 300px) {
+  .row {
+    font-size: 2vh;
+  }
+}
